@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+	font-family: 'Inter', sans-serif;;
+	padding: 0 2%;
+	margin: 0;
+	background-image: url("img/wave-haikei.svg");
+	background-size: cover;
+}
+
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	position: sticky;
+	top: 0;
+}
+nav .profile {
+	display: flex;
+	align-items: center;
+}
+nav .profile img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+nav .profile h1 {
+	margin-left: 10px;
+	font-size: 20px;
+}
+nav ul {
+	display: flex;
+	list-style-type: none;
+}
+
+nav ul li a:link {
+	color: #000000;
+	background-color: transparent;
+	text-decoration: none;
+  }
+
+nav ul li a:visited {
+	color: #000000;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+nav ul li {
+	margin-left: 20px;
+	cursor: pointer;
+	border-bottom: 1px solid #fff;
+	text-decoration:none
+}
+nav ul li:hover {
+	border-bottom-color: #000;
+	text-decoration:none
+}
+/*Animation text with Typed.js*/
+/*Stylisation de l'emplacement du text*/
+/*.page-content header .anim-text{
+	
+}
+/*Stylisation du h1*/
+.page-content header .anim-text h1{
+	font-size: 2.5rem;
+}
+/*Stylisation du text Typed.js*/
+.page-content header .anim-text .input__text{
+	color: #FF3636;
+}
+/*End Animation text with Typed.js */
+.page-content {
+	margin: 4%;
+}
+.page-content header {
+	margin-top: 5%;
+	max-width: 80%;
+}
+.page-content header h1 {
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'Poppins', sans-serif;
+	font-size: 6vw;
+}
+.page-content header p {
+	line-height: 30px;
+	color: #818181;
+}
+.page-content header button {
+	background-color: inherit;
+	border: none;
+	outline: none;
+	padding: 0;
+	font-size: 15px;
+	font-weight: bold;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+.page-content header button:hover {
+	color: #ccc;
+	border-bottom-color: #000;
+}
+.page-content .presentation-image {
+	margin-top: 5%;
+}
+.page-content .presentation-image img {
+	max-width: 100%;
+	height: auto;
+}
+
+.page-content .projects-section {
+	margin-top: 6%;
+}
+.page-content .projects-section h1 {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 3vw;
+}
+.page-content .projects-section .projects {
+	display: flex;
+	flex-wrap: wrap;
+}
+.page-content .projects-section .project {
+	margin-right: 20px;
+	max-width: 195px;
+}
+.page-content .projects-section .project h4 {
+	margin: 0;
+}
+.page-content .projects-section .project .description {
+	font-size: 10px;
+}
+.page-content .projects-section .project .dates {
+	font-size: 13px;
+	color: rgb(145, 145, 145);
+}
+/**/
+.page-content .diplomes {
+	margin-top: 6%;
+}
+.page-content .diplomes h1 {
+	font-family: 'Inter, sans-serif';
+	text-transform: uppercase;
+	font-size: 3vw;
+}
+.page-content .diplome {
+	display: flex;
+	flex-wrap: wrap;
+}
+.page-content .diplome {
+	margin-right: 20px;
+	max-width: 195px;
+}
+.page-content .diplome h4 {
+	margin: 0;
+}
+.page-content .diplome .description {
+	font-size: 10px;
+}
+.page-content .diplome .dates {
+	font-size: 13px;
+	color: rgb(145, 145, 145);
+}
+
+footer {
+	margin-top: 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 10px;
+	background-color: #000;
+	color: white;
+}
+footer .colonne p {
+	font-size: 12px;
+	color: #ccc;
+	cursor: pointer;
+}
+footer .colonne p:hover {
+	color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+	nav {
+		justify-content: center;
+	}
+	nav ul {
+		display: none;
+	}
+
+	.page-content header {
+		margin-top: 10%;
+		max-width: 100%;
+	}
+	.page-content .projects-section {
+		margin-top: 15%;
+	}
+	.page-content .projects-section h1 {
+		font-size: 1.5em;
+	}
+	.page-content .projects-section .project {
+		margin-right: 0;
+		margin-bottom: 20px;
+		max-width: 100%;
+	}
+	.page-content .projects-section .project .description {
+		font-size: 13px;
+	}
+	
+	.page-content .diplomes {
+		margin-top: 15%;
+	}
+	.page-content .diplomes h1 {
+		font-size: 1.5em;
+	}
+	.page-content .diplomes .diplome {
+		margin-right: 0;
+		margin-bottom: 20px;
+		max-width: 100%;
+	}
+	.page-content .diplomes .diplome .description {
+		font-size: 13px;
+	}
+
+	footer {
+		justify-content: flex-start;
+		background: url('img/blurry-gradient-haikei.svg');
+	}
+	footer .column {
+		width: 80%;
+	}
+}
